@@ -3,11 +3,14 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Laravel</title>
+        <title>DC Comics</title>
         @vite('resources/js/app.js')
     </head>
     <body>
-        <h1 class="text-center">Home page</h1>
-        {{-- <img src="{{ Vite::asset('resources/img/picsum30.jpg') }}" alt=""> --}}
+        <div class="container">
+            <main>
+                @yield('contents')
+            </main>
+        </div>
     </body>
 </html>
