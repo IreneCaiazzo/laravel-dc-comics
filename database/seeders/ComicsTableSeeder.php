@@ -17,6 +17,7 @@ class ComicsTableSeeder extends Seeder
     {
 
         foreach (config('comics') as $comic) {
+            //creare riga nel DB
             Comic::create($comic);
         }
     }
